@@ -8,6 +8,8 @@ import { DocumentList } from './components/DocumentList';
 import { ChatInterface } from './components/ChatInterface';
 import { RCADisplay } from './components/RCADisplay';
 import { GraphVisualization } from './components/GraphVisualization';
+import { InstallPrompt } from './components/InstallPrompt';
+import { OfflineIndicator } from './components/OfflineIndicator';
 
 type Tab = 'upload' | 'documents' | 'query' | 'rca' | 'graph';
 
@@ -117,6 +119,12 @@ function App() {
           pauseOnHover
           theme="light"
         />
+        
+        {/* PWA Install Prompt */}
+        <InstallPrompt />
+        
+        {/* Offline Indicator */}
+        <OfflineIndicator />
       </div>
     </SessionProvider>
   );

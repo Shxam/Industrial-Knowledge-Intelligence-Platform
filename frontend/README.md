@@ -1,26 +1,25 @@
-# Industrial AI Assistant - Frontend
+# IKIP Frontend - React PWA
 
-Modern React + TypeScript frontend for the Industrial AI Assistant platform.
+Progressive Web Application (PWA) frontend for the Industrial Knowledge Intelligence Platform (IKIP).
 
 ## 🚀 Features
 
-- **Document Upload**: Drag-and-drop interface for uploading PDF, TXT, DOCX, and MD files
-- **Chat Interface**: Ask questions about uploaded documents with AI-powered responses and citations
-- **Root Cause Analysis**: AI agent for 5-Why analysis and fishbone diagrams
-- **Knowledge Graph**: Visualize entities and relationships extracted from documents
+- ✅ **React 19** with TypeScript
+- ✅ **Progressive Web App** with offline support
+- ✅ **Mobile-First Design** with responsive layouts
+- ✅ **Real-time Chat Interface** with session management
+- ✅ **Document Management** with drag-and-drop upload
+- ✅ **Knowledge Graph Visualization** with Cytoscape
+- ✅ **Root Cause Analysis (RCA)** interface
+- ✅ **Tailwind CSS** for styling
+- ✅ **Vite** for fast development and builds
 
-## 🛠️ Tech Stack
+## 📋 Prerequisites
 
-- **React 18** with TypeScript
-- **Vite** - Fast build tool
-- **Tailwind CSS** - Utility-first styling
-- **React Query** - Server state management
-- **Axios** - HTTP client
-- **react-dropzone** - File upload
-- **react-markdown** - Markdown rendering
-- **lucide-react** - Icon library
+- Node.js 18+ and npm
+- Backend API running on http://localhost:8000
 
-## 📦 Installation
+## 🛠️ Installation
 
 ```bash
 # Install dependencies
@@ -29,132 +28,255 @@ npm install
 # Copy environment variables
 cp .env.example .env
 
+# Edit .env with your backend URL if needed
+# VITE_API_URL=http://localhost:8000/api/v1
+```
+
+## 🏃 Development
+
+```bash
 # Start development server
 npm run dev
+
+# Access at http://localhost:3000
 ```
 
-The app will be available at `http://localhost:5173`
+The dev server includes:
+- Hot Module Replacement (HMR)
+- Automatic proxy to backend API
+- PWA features (service worker)
 
-## 🔧 Configuration
-
-Edit `.env` to configure the backend API URL:
+## 🏗️ Build
 
 ```bash
-VITE_API_URL=http://localhost:8000/api/v1
-```
-
-## 📁 Project Structure
-
-```
-src/
-├── api/
-│   └── client.ts              # API client and endpoints
-├── components/
-│   ├── DocumentUpload.tsx     # File upload component
-│   ├── ChatInterface.tsx      # Q&A chat interface
-│   ├── RCADisplay.tsx         # Root cause analysis display
-│   └── GraphVisualization.tsx # Knowledge graph viewer
-├── App.tsx                     # Main app with tab navigation
-├── main.tsx                    # Entry point
-└── index.css                   # Global styles with Tailwind
-```
-
-## 🎨 Features in Detail
-
-### Document Upload
-- Drag-and-drop file upload
-- Support for PDF, TXT, DOCX, MD formats
-- Real-time upload progress
-- Success/error feedback
-
-### Chat Interface
-- Chat-style Q&A interface
-- Display AI responses with markdown support
-- Show source citations with relevance scores
-- Auto-scroll to latest messages
-
-### Root Cause Analysis
-- Input form for failure description
-- 5-Why analysis visualization
-- Fishbone diagram (6 categories)
-- Actionable recommendations
-- Evidence summary
-- Confidence score
-
-### Knowledge Graph
-- Display graph statistics
-- Node and relationship type breakdown
-- (Coming soon: Interactive Cytoscape.js visualization)
-
-## 🧪 Available Scripts
-
-```bash
-# Development server
-npm run dev
-
 # Build for production
 npm run build
 
 # Preview production build
 npm run preview
-
-# Lint code
-npm run lint
 ```
 
-## 🎯 Usage
+## 📱 PWA Features
 
-1. **Upload Documents**: Navigate to "Upload Documents" tab and upload your files
-2. **Ask Questions**: Go to "Ask Questions" tab and chat with the AI about your documents
-3. **Run RCA**: Use "Root Cause Analysis" tab to analyze failures and incidents
-4. **Explore Graph**: View the knowledge graph in "Knowledge Graph" tab
+### Service Worker
+- Offline support for static assets
+- API response caching (GET requests)
+- Background sync (future)
+- Push notifications (future)
 
-## 🌐 API Integration
+### Installation
+- Custom install prompt
+- Desktop and mobile support
+- App shortcuts for quick actions
 
-The frontend connects to the backend API at `http://localhost:8000/api/v1` by default.
+### Manifest
+- Standalone display mode
+- Custom icons and theme colors
+- Home screen installation
 
-API endpoints used:
-- `POST /documents/upload` - Upload documents
-- `GET /documents/{id}/status` - Check document processing status
-- `POST /query` - Ask questions about documents
-- `POST /rca/analyze` - Perform root cause analysis
-- `GET /graph/stats` - Get knowledge graph statistics
-- `GET /graph/visualize` - Get graph data for visualization
+## 📁 Project Structure
 
-## 🎨 Styling
+```
+frontend/
+├── public/
+│   ├── manifest.json      # PWA manifest
+│   ├── sw.js             # Service worker
+│   ├── favicon.svg       # App icon
+│   └── icons.svg         # Icon sprite
+├── src/
+│   ├── api/
+│   │   └── client.ts     # API client with axios
+│   ├── components/
+│   │   ├── ChatInterface.tsx
+│   │   ├── DocumentUpload.tsx
+│   │   ├── DocumentList.tsx
+│   │   ├── GraphVisualization.tsx
+│   │   ├── RCADisplay.tsx
+│   │   ├── InstallPrompt.tsx
+│   │   ├── OfflineIndicator.tsx
+│   │   └── LoadingScreen.tsx
+│   ├── context/
+│   │   └── SessionContext.tsx
+│   ├── App.tsx           # Main app component
+│   ├── main.tsx          # App entry point
+│   ├── index.css         # Global styles
+│   └── App.css           # Component styles
+├── index.html            # HTML entry point
+├── vite.config.ts        # Vite configuration
+├── tailwind.config.js    # Tailwind configuration
+└── package.json          # Dependencies
+```
 
-The app uses Tailwind CSS with a custom industrial theme:
-- Primary color: Industrial Blue (#0ea5e9)
-- Clean, professional design
-- Fully responsive
-- Dark mode ready (coming soon)
+## 🎨 Components
 
-## 🔮 Upcoming Features
+### ChatInterface
+Multi-session chat interface with:
+- Session management (create, switch, delete)
+- Message history with citations
+- Markdown rendering
+- Auto-scroll to latest message
 
-- [ ] Interactive graph visualization with Cytoscape.js
-- [ ] Session management
-- [ ] User authentication
-- [ ] Document preview
-- [ ] Export RCA reports to PDF
-- [ ] Advanced graph filters
-- [ ] Real-time updates via WebSocket
-- [ ] Dark mode
-- [ ] Keyboard shortcuts
+### DocumentUpload
+Drag-and-drop file upload with:
+- Multiple file support
+- Upload progress tracking
+- File type validation
+- Size limits (50MB)
 
-## 🐛 Troubleshooting
+### DocumentList
+Document library with:
+- Status indicators (processing, completed, failed)
+- Delete functionality
+- Refresh capability
+- Metadata display
 
-**Issue**: Can't connect to backend
-- Ensure backend is running at `http://localhost:8000`
-- Check `.env` file has correct `VITE_API_URL`
+### GraphVisualization
+Interactive knowledge graph with:
+- Cytoscape.js visualization
+- Node search and filtering
+- Zoom and pan controls
+- Custom layouts
 
-**Issue**: Upload fails
-- Check file format is supported (PDF, TXT, DOCX, MD)
-- Ensure backend has proper CORS configuration
+### RCADisplay
+Root Cause Analysis interface with:
+- 5-Why analysis display
+- Fishbone diagram
+- Recommendations list
+- Evidence summary
 
-**Issue**: Query returns no results
-- Upload documents first
-- Wait for documents to be processed (check status)
+## 🔧 Configuration
+
+### Environment Variables
+
+```bash
+# Backend API URL
+VITE_API_URL=http://localhost:8000/api/v1
+
+# Feature flags
+VITE_ENABLE_OFFLINE_MODE=true
+VITE_ENABLE_NOTIFICATIONS=false
+```
+
+### Vite Config
+- Port: 3000
+- Proxy: `/api` → `http://localhost:8000`
+- Code splitting for vendors
+- Source maps disabled in production
+
+## 🌐 Browser Support
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Mobile browsers (iOS Safari 14+, Chrome Android 90+)
+
+## 📱 Mobile Testing
+
+```bash
+# Start dev server accessible on network
+npm run dev
+
+# Access from mobile device:
+# http://YOUR_IP:3000
+```
+
+## 🐛 Debugging
+
+### Check Service Worker
+Open DevTools → Application → Service Workers
+
+### View PWA Status
+Chrome DevTools → Lighthouse → PWA Audit
+
+### Network Issues
+Check DevTools → Network tab for API calls
+
+## 🚀 Deployment
+
+### Static Hosting (Netlify, Vercel)
+```bash
+npm run build
+# Deploy the dist/ folder
+```
+
+### Docker
+```bash
+docker build -t ikip-frontend .
+docker run -p 3000:3000 ikip-frontend
+```
+
+### Nginx Configuration
+```nginx
+location /api/ {
+    proxy_pass http://backend:8000/api/;
+}
+
+location / {
+    root /usr/share/nginx/html;
+    try_files $uri $uri/ /index.html;
+}
+```
+
+## 📊 Performance
+
+### Optimization Techniques
+- Code splitting by vendor
+- Lazy loading for routes (future)
+- Image optimization
+- Gzip compression
+- Service worker caching
+
+### Lighthouse Scores (Target)
+- Performance: 90+
+- Accessibility: 95+
+- Best Practices: 95+
+- SEO: 90+
+- PWA: 100
+
+## 🔒 Security
+
+- HTTPS required for PWA features
+- CORS configured for backend
+- Input sanitization
+- XSS protection via React
+- CSP headers (configure in deployment)
+
+## 🧪 Testing
+
+```bash
+# Run linter
+npm run lint
+
+# Type check
+npx tsc --noEmit
+```
+
+## 📝 Notes
+
+### Session Management
+- Chat sessions stored in localStorage
+- Persists across page refreshes
+- Automatic session creation
+- Max session storage: ~5MB
+
+### Offline Support
+- Static assets cached on install
+- API responses cached (GET only)
+- Fallback for offline queries
+- Background sync for uploads (future)
+
+## 🤝 Contributing
+
+1. Follow existing code structure
+2. Use TypeScript for new components
+3. Add proper prop types and interfaces
+4. Test on both desktop and mobile
+5. Ensure PWA features work
 
 ## 📄 License
 
-MIT
+MIT License - see LICENSE file for details
+
+---
+
+**Built with ❤️ for the Industrial AI Hackathon**
