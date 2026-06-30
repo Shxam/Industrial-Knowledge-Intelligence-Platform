@@ -1,0 +1,385 @@
+EQUIPMENT MAINTENANCE GUIDE
+Industrial Plant Operations Manual
+Version 2.1 - January 2026
+
+====================================
+SECTION 1: SAFETY PROTOCOLS
+====================================
+
+1.1 GENERAL SAFETY REQUIREMENTS
+
+All personnel must adhere to the following safety protocols before performing any maintenance work:
+
+- Wear appropriate PPE (Personal Protective Equipment) including hard hat, safety glasses, steel-toed boots, and high-visibility vest
+- Complete Lockout/Tagout (LOTO) procedures for all equipment before maintenance
+- Verify isolation of all energy sources (electrical, pneumatic, hydraulic, thermal)
+- Use fall protection when working at heights above 6 feet
+- Maintain clear communication with control room operators
+- Follow confined space entry procedures where applicable
+
+1.2 EMERGENCY PROCEDURES
+
+In case of emergency:
+1. Immediately notify control room (Ext. 911)
+2. Activate emergency stop if safe to do so
+3. Evacuate to designated assembly points
+4. Do not attempt to fight fires unless trained and safe to do so
+5. Account for all team members at assembly point
+
+====================================
+SECTION 2: CONVEYOR SYSTEMS
+====================================
+
+2.1 PREVENTIVE MAINTENANCE SCHEDULE
+
+Daily Inspections (8:00 AM shift start):
+- Check belt tension and alignment
+- Inspect for material buildup on rollers
+- Verify emergency stop functionality
+- Check for unusual noise or vibration
+- Inspect belt surface for damage or wear
+
+Weekly Maintenance (Every Monday):
+- Lubricate all bearings with NLGI Grade 2 grease
+- Check drive belt tension
+- Inspect and clean belt cleaners
+- Test all safety interlocks
+- Document all findings in maintenance log
+
+Monthly Maintenance (First Monday of month):
+- Complete alignment check with laser alignment tool
+- Replace worn rollers (minimum 5mm wear)
+- Check motor amperage draw
+- Inspect electrical connections
+- Test variable frequency drive (VFD) parameters
+
+Annual Overhaul:
+- Complete belt replacement if wear exceeds 15%
+- Replace all bearings and seals
+- Calibrate load cells and speed sensors
+- Complete structural inspection
+- Update maintenance records
+
+2.2 COMMON ISSUES AND TROUBLESHOOTING
+
+Issue: Belt tracking to one side
+Causes:
+- Misaligned idlers
+- Material buildup on rollers
+- Uneven belt tension
+- Structural damage
+
+Solutions:
+- Adjust idler positions
+- Clean rollers and belt surface
+- Check tension across entire belt width
+- Inspect structure for damage or settling
+
+Issue: Motor overheating
+Causes:
+- Overloading beyond rated capacity
+- Inadequate ventilation
+- Bearing failure
+- Electrical faults
+
+Solutions:
+- Reduce load or increase belt speed
+- Clean motor cooling fins
+- Replace bearings if temperature exceeds 80°C
+- Check motor current draw and insulation resistance
+
+====================================
+SECTION 3: PUMP SYSTEMS
+====================================
+
+3.1 CENTRIFUGAL PUMP MAINTENANCE
+
+Pre-Startup Checklist:
+- Verify pump and motor alignment
+- Check oil level in bearing housing
+- Ensure suction valve is open
+- Prime pump if required
+- Check seal flush system
+
+Operating Parameters:
+- Flow rate: 500-1000 GPM
+- Discharge pressure: 50-75 PSI
+- Motor current: <30 amps
+- Bearing temperature: <75°C
+- Vibration: <0.3 in/sec
+
+Routine Maintenance:
+- Daily: Check for leaks, noise, and vibration
+- Weekly: Check oil level and seal condition
+- Monthly: Monitor performance (flow vs. pressure)
+- Quarterly: Complete vibration analysis
+- Annual: Replace seals and bearings
+
+3.2 POSITIVE DISPLACEMENT PUMPS
+
+Common Applications:
+- Chemical dosing
+- High-viscosity fluids
+- Precise metering applications
+
+Key Maintenance Points:
+- Check packing adjustment weekly
+- Monitor suction and discharge pressures
+- Verify stroke length and frequency
+- Inspect valves and seats monthly
+- Replace diaphragms annually (or per manufacturer recommendation)
+
+====================================
+SECTION 4: HEAT EXCHANGERS
+====================================
+
+4.1 SHELL AND TUBE HEAT EXCHANGERS
+
+Performance Monitoring:
+- Temperature differential across both streams
+- Pressure drop (tube side and shell side)
+- Flow rates and velocities
+- Heat transfer coefficient calculation
+
+Fouling Indicators:
+- Increased pressure drop (>20% from baseline)
+- Reduced heat transfer efficiency
+- Temperature approach narrowing
+- Increased pumping costs
+
+Cleaning Procedures:
+1. Isolate and drain exchanger
+2. Remove tube bundle (if accessible)
+3. High-pressure water jet cleaning (3000-5000 PSI)
+4. Chemical cleaning for stubborn deposits
+5. Inspect tubes for corrosion or erosion
+6. Reinstall and test for leaks
+
+Preventive Measures:
+- Install strainers on inlet streams
+- Monitor water chemistry (pH, hardness, chlorides)
+- Use appropriate chemical treatments
+- Schedule cleaning before efficiency drops below 80%
+
+====================================
+SECTION 5: COMPRESSED AIR SYSTEMS
+====================================
+
+5.1 AIR COMPRESSOR MAINTENANCE
+
+Daily Checks:
+- Check oil level in compressor sump
+- Drain receiver tank condensate
+- Record discharge temperature
+- Listen for unusual noise
+- Check for air leaks
+
+Weekly Maintenance:
+- Clean air intake filter
+- Check belt tension (belt-driven units)
+- Test safety valve operation
+- Check for oil leaks
+- Monitor operating hours
+
+Monthly Tasks:
+- Replace air/oil separator element
+- Change oil filter
+- Check motor bearing temperature
+- Test moisture separator
+- Verify pressure switch settings
+
+Annual Service:
+- Complete oil change (synthetic oil recommended)
+- Replace inlet valve and unloader valve
+- Inspect airend for wear
+- Calibrate pressure gauges
+- Complete comprehensive leak survey
+
+5.2 AIR LEAK DETECTION
+
+Common Leak Points:
+- Hose connections
+- Quick disconnect fittings
+- Threaded pipe joints
+- Valve packing glands
+- Flange gaskets
+
+Detection Methods:
+- Ultrasonic leak detector (most effective)
+- Soapy water solution
+- Acoustic monitoring
+- Annual professional audit
+
+Cost Impact:
+- 1/8" leak @ 100 PSI = $2,000/year
+- 1/4" leak @ 100 PSI = $8,000/year
+- 3/8" leak @ 100 PSI = $18,000/year
+- 1/2" leak @ 100 PSI = $32,000/year
+
+====================================
+SECTION 6: ELECTRICAL SYSTEMS
+====================================
+
+6.1 MOTOR CONTROL CENTERS (MCC)
+
+Safety Requirements:
+- Only qualified electricians permitted
+- Arc flash hazard assessment required
+- Appropriate PPE based on incident energy level
+- Live work permit required for energized work
+
+Routine Inspections:
+- Check for signs of overheating
+- Inspect connections for corrosion
+- Test overload protection
+- Verify ground fault protection
+- Check contactor condition
+
+Thermal Imaging:
+- Scan all MCC buckets quarterly
+- Temperature rise >20°C above ambient requires investigation
+- Compare similar loads for consistency
+- Document all findings with infrared camera
+
+6.2 VARIABLE FREQUENCY DRIVES (VFD)
+
+Maintenance Schedule:
+- Monthly: Clean cooling fans and heatsinks
+- Quarterly: Check DC bus capacitor voltage
+- Semi-annually: Tighten all power connections
+- Annually: Check surge protection devices
+- Every 5 years: Replace cooling fans and capacitors
+
+Common Faults:
+- Overtemperature: Clean heatsink, check ventilation
+- Overcurrent: Check motor and cable insulation
+- Ground fault: Check motor and cable connections
+- Communication fault: Check network connections
+
+====================================
+SECTION 7: INSTRUMENTATION
+====================================
+
+7.1 FLOW METERS
+
+Calibration Requirements:
+- Magnetic flowmeters: Annual verification
+- Coriolis meters: Annual verification
+- Ultrasonic meters: Every 6 months
+- Differential pressure meters: Every 3 months
+
+Installation Requirements:
+- Minimum 5D straight run upstream, 2D downstream
+- Avoid elbows, valves, and reducers nearby
+- Ensure full pipe during operation
+- Proper grounding essential for magnetic meters
+
+7.2 TEMPERATURE SENSORS
+
+Types and Applications:
+- RTD: High accuracy (±0.1°C), -200 to 600°C
+- Thermocouple: Wide range (-200 to 2000°C), lower accuracy
+- Thermistor: High sensitivity, limited range
+- Infrared: Non-contact, surface temperature
+
+Calibration Schedule:
+- Process critical: Quarterly
+- Non-critical: Annually
+- After replacement: Before returning to service
+
+====================================
+SECTION 8: LUBRICATION
+====================================
+
+8.1 LUBRICANT SELECTION
+
+Grease Applications:
+- NLGI Grade 2: Most electric motors, general bearings
+- NLGI Grade 1: High-speed applications, cold environments
+- NLGI Grade 3: Vertical shafts, high-temperature applications
+
+Oil Applications:
+- ISO VG 32: Hydraulic systems, compressors
+- ISO VG 46: Gearboxes, medium-speed bearings
+- ISO VG 68: Heavy-duty gearboxes, slow-speed bearings
+
+8.2 LUBRICATION SCHEDULES
+
+Electric Motors:
+- Sleeve bearings: Oil bath, check monthly
+- Ball bearings: Greased, relubricate per manufacturer schedule
+- Large motors (>100 HP): Monthly checks, annual oil change
+
+Pumps:
+- Centrifugal pumps: Check oil weekly, change quarterly
+- Positive displacement: Follow manufacturer recommendations
+- Submersible pumps: Oil-filled, annual change
+
+Gearboxes:
+- Check oil level daily
+- Change oil annually or every 5000 operating hours
+- Use synthetic oil for extended drain intervals
+- Sample oil for analysis quarterly
+
+====================================
+SECTION 9: QUALITY CONTROL
+====================================
+
+9.1 DOCUMENTATION REQUIREMENTS
+
+All maintenance activities must be documented:
+- Work order number
+- Date and time
+- Personnel involved
+- Equipment identification
+- Work performed
+- Parts used
+- Measurements taken
+- Recommendations for future work
+
+9.2 SPARE PARTS MANAGEMENT
+
+Critical spare parts must be maintained:
+- Minimum stock levels defined
+- Regular inventory checks
+- Proper storage conditions
+- Obsolescence monitoring
+- Vendor lead times tracked
+
+====================================
+SECTION 10: TRAINING
+====================================
+
+10.1 REQUIRED TRAINING
+
+All maintenance personnel must complete:
+- Safety orientation (annual)
+- LOTO training (annual)
+- Equipment-specific training
+- Emergency response procedures
+- First aid/CPR certification
+
+10.2 COMPENCY VERIFICATION
+
+Skills verification required for:
+- Electrical work
+- Welding and fabrication
+- Crane and hoist operation
+- Confined space entry
+- Hot work permits
+
+====================================
+END OF GUIDE
+====================================
+
+Document Control:
+- Last Updated: January 15, 2026
+- Approved By: Maintenance Manager
+- Review Cycle: Annual
+- Next Review: January 2027
+
+Distribution:
+- All maintenance personnel
+- Operations supervisors
+- Engineering department
+- Safety department

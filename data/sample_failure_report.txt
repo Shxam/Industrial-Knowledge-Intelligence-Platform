@@ -1,0 +1,338 @@
+# EQUIPMENT FAILURE REPORT
+
+## Report Information
+- **Report Number**: WO-2026-0625-P101
+- **Date of Failure**: June 25, 2026
+- **Time of Failure**: 14:35 hrs
+- **Reported By**: John Martinez, Shift Operator
+- **Report Date**: June 25, 2026, 15:00 hrs
+- **Facility**: Refinery Unit 3, Pumping Station A
+- **Priority**: HIGH
+
+---
+
+## Equipment Information
+- **Equipment ID**: P-101
+- **Equipment Name**: Feed Pump #1
+- **Equipment Type**: Centrifugal Pump
+- **Model**: XYZ-500
+- **Serial Number**: AP-2024-P101-7789
+- **Service**: Crude oil transfer
+- **Installation Date**: January 15, 2024
+- **Last Maintenance**: March 10, 2026
+
+---
+
+## Failure Description
+
+### Initial Observation
+At approximately 14:35 on June 25, 2026, shift operator John Martinez observed significant 
+fluid leakage from the mechanical seal area of Pump P-101 during routine field inspection. 
+The pump was running under normal operating conditions at the time.
+
+### Immediate Actions Taken
+1. **14:35**: Leakage observed and reported to control room
+2. **14:37**: Supervisor Mike Johnson notified
+3. **14:40**: Decision made to shut down pump
+4. **14:42**: Pump secured following emergency shutdown procedure
+5. **14:45**: Area isolated and ventilated
+6. **15:00**: Maintenance team arrived on site
+7. **15:30**: Initial damage assessment completed
+
+### Failure Details
+- **Failed Component**: Mechanical seal (John Crane Type 21)
+- **Failure Mode**: Complete seal face failure
+- **Leakage Rate (before shutdown)**: Approximately 5 gallons per minute
+- **Fluid Released**: Crude oil (approximately 15 gallons total)
+- **Damage Assessment**: 
+  - Seal faces severely worn and cracked
+  - Seal O-rings deteriorated
+  - Evidence of overheating on seal faces
+  - No damage to shaft or bearing housing
+  - No damage to impeller
+
+---
+
+## Operating Conditions at Time of Failure
+
+### Process Conditions
+- **Flow Rate**: 550 GPM (110% of rated capacity)
+- **Suction Pressure**: 45 PSI
+- **Discharge Pressure**: 178 PSI
+- **Fluid Temperature**: 95°C (203°F) - **ABOVE DESIGN SPEC OF 80°C**
+- **Ambient Temperature**: 38°C (100°F)
+- **Operating Hours Since Last Seal Change**: 2,800 hours
+
+### Instrumentation Readings
+| Parameter | Value | Normal Range | Status |
+|-----------|-------|--------------|--------|
+| Flow | 550 GPM | 450-500 GPM | HIGH |
+| Suction Pressure | 45 PSI | 40-50 PSI | NORMAL |
+| Discharge Pressure | 178 PSI | 140-160 PSI | HIGH |
+| Temperature | 95°C | 70-80°C | HIGH |
+| Vibration | 0.28 in/sec | < 0.30 in/sec | NORMAL |
+| Motor Current | 88 A | 75-85 A | HIGH |
+| Bearing Temp (DE) | 78°C | 60-71°C | HIGH |
+| Bearing Temp (NDE) | 75°C | 60-71°C | HIGH |
+
+---
+
+## Historical Context
+
+### Previous Failures
+This is the **THIRD seal failure** on P-101 in the past 4 months:
+
+#### Failure #1: March 8, 2026
+- **Cause**: Normal wear after 18 months of operation
+- **Repair**: Routine seal replacement
+- **Downtime**: 8 hours
+- **Cost**: $4,500
+
+#### Failure #2: April 15, 2026
+- **Cause**: Suspected contamination in seal flush system
+- **Repair**: Seal replacement + seal flush system cleaning
+- **Downtime**: 12 hours
+- **Cost**: $6,200
+- **Corrective Action**: Installed additional filters in seal flush line
+
+#### Failure #3: June 25, 2026 (CURRENT)
+- **Cause**: Under investigation (preliminary: overheating due to excessive operating conditions)
+- **Repair**: Pending
+- **Downtime**: TBD
+- **Cost**: TBD
+
+### Operating History (Past 6 Months)
+- **December 2025 - February 2026**: Normal operation at 450-500 GPM, 75-80°C
+- **March 2026**: First seal failure, routine replacement
+- **April 2026**: Increased production demand, flow increased to 520-550 GPM
+- **April 2026**: Second seal failure, contamination suspected
+- **May 2026**: Continued high-capacity operation (520-550 GPM)
+- **May-June 2026**: Temperature gradually increased to 90-95°C due to:
+  - Higher flow rates
+  - Warmer ambient temperatures (summer)
+  - Increased crude oil temperature from upstream process
+- **June 25, 2026**: Third seal failure
+
+### Maintenance History
+| Date | Activity | Performed By | Hours |
+|------|----------|--------------|-------|
+| Jan 15, 2024 | Initial installation | Mike's Mechanical | 16 |
+| Jul 20, 2024 | Quarterly inspection | Plant Maintenance | 2 |
+| Oct 15, 2024 | Bearing regreasing | Plant Maintenance | 1 |
+| Jan 10, 2025 | Annual overhaul | Contractor Services | 24 |
+| Mar 8, 2026 | Seal replacement | Plant Maintenance | 8 |
+| Apr 15, 2026 | Seal replacement + flush system | Plant Maintenance | 12 |
+| Jun 25, 2026 | CURRENT FAILURE | TBD | TBD |
+
+---
+
+## Root Cause Analysis (Preliminary)
+
+### Direct Cause
+Mechanical seal failure due to excessive temperature causing:
+1. Thermal degradation of seal faces
+2. O-ring deterioration
+3. Loss of seal face flatness
+4. Seal face cracking
+
+### Contributing Factors
+
+#### 1. Operating Above Design Specifications
+- **Design Flow**: 500 GPM
+- **Actual Flow**: 550 GPM (110% of design)
+- **Design Temperature**: 80°C
+- **Actual Temperature**: 95°C (119% of design, at maximum limit)
+
+#### 2. Increased Production Demand
+- Management decision in April 2026 to increase throughput by 10%
+- No engineering review of pump capacity
+- No assessment of equipment limitations
+- No upgrade to cooling or seal systems
+
+#### 3. Inadequate Cooling
+- Seal flush system designed for 80°C maximum
+- No enhancement to flush system despite higher temperatures
+- Ambient temperature increase in summer (30°C → 38°C) not accounted for
+
+#### 4. Insufficient Maintenance Frequency
+- Seal replacement interval based on normal operating conditions (18 months)
+- Not adjusted for increased operating severity
+- No condition monitoring of seal temperature
+
+#### 5. Lack of Temperature Alarms
+- Temperature alarm set to 100°C (trip point)
+- Actual operating temperature (95°C) below alarm but above design
+- No early warning of excessive temperature
+
+### Similar Equipment Review
+- **P-102** (identical pump, parallel service): 
+  - Operating at 480 GPM, 82°C
+  - No recent seal failures
+  - Last seal change: 14 months ago
+  - **Conclusion**: Operating within design specs = reliable operation
+
+---
+
+## Impact Assessment
+
+### Production Impact
+- **Immediate Loss**: 10 hours of downtime (estimated)
+- **Production Rate**: 10,000 barrels/day affected
+- **Lost Production**: ~4,200 barrels
+- **Revenue Impact**: ~$350,000 (at $83/barrel)
+
+### Safety Impact
+- **Personnel Exposure**: 2 operators exposed to crude oil mist
+- **Environmental**: ~15 gallons crude oil spilled, contained in curbed area
+- **Regulatory**: Reportable spill under EPA regulations
+- **Injuries**: None
+
+### Cost Impact
+| Item | Cost |
+|------|------|
+| Seal replacement parts | $3,500 |
+| Labor (10 hours × 3 techs) | $2,400 |
+| Lost production | $350,000 |
+| Environmental cleanup | $5,000 |
+| Regulatory reporting | $1,000 |
+| **Total Estimated Cost** | **$361,900** |
+
+### Reputational Impact
+- Third failure in 4 months raises reliability concerns
+- Regulatory scrutiny likely to increase
+- Customer confidence may be affected
+
+---
+
+## Recommended Corrective Actions
+
+### Immediate (< 24 hours)
+1. ✅ **Complete**: Secure pump and isolate area
+2. ✅ **Complete**: Contain spilled oil and clean up
+3. ⏳ **In Progress**: Replace mechanical seal with new unit
+4. ⏳ **In Progress**: Inspect shaft, bearings, and seal chamber for secondary damage
+5. ❌ **Pending**: Submit environmental report to regulatory agencies
+
+### Short-Term (1-2 weeks)
+1. **Reduce Operating Conditions** (CRITICAL)
+   - Reduce flow to 480 GPM (96% of design) maximum
+   - Install temperature monitoring on seal area
+   - Set temperature alarm to 85°C (5°C below maximum design)
+   
+2. **Upgrade Mechanical Seal**
+   - Install high-temperature seal rated to 120°C
+   - Part number: JC-21-125-HT (high-temp version)
+   - Cost: Additional $1,200
+   - Lead time: 3 days
+
+3. **Enhance Seal Cooling**
+   - Increase seal flush flow from 1.5 GPM to 2.5 GPM
+   - Install seal flush cooler
+   - Cost: $8,500
+   - Lead time: 2 weeks
+
+4. **Implement Condition Monitoring**
+   - Install wireless temperature sensor on seal area
+   - Set up trending and alarming in control system
+   - Cost: $2,500
+
+### Medium-Term (1-3 months)
+1. **Engineering Review**
+   - Conduct formal pump capacity study
+   - Assess if P-101 suitable for increased capacity
+   - Consider upgrading to larger pump
+   - Estimated cost: $15,000 (engineering study)
+
+2. **Parallel Pump Operation**
+   - Evaluate running both P-101 and P-102 at lower capacity (450 GPM each)
+   - Benefit: Both pumps within design specs, reduced stress
+   - Challenge: Increased power consumption, more maintenance
+
+3. **Preventive Maintenance Enhancement**
+   - Reduce seal replacement interval from 18 months to 12 months
+   - Implement quarterly seal inspection (ultrasonic testing)
+   - Add seal flush system to PM checklist
+   - Estimated additional cost: $12,000/year
+
+### Long-Term (6-12 months)
+1. **Capital Project: Install New Pump**
+   - Install P-103 (spare pump) for redundancy
+   - Allows maintenance without production impact
+   - Reduces operating stress on individual pumps
+   - Estimated cost: $150,000 (pump + piping + installation)
+   
+2. **Process Optimization**
+   - Review overall process to reduce temperature
+   - Install crude oil cooler upstream of pumps
+   - Estimated cost: $75,000
+
+3. **Training and Procedures**
+   - Update operating procedures with new limits
+   - Train operators on early warning signs
+   - Implement formal management of change process
+   - Cost: Minimal
+
+---
+
+## Lessons Learned
+
+### What Went Well
+- ✅ Quick identification of failure by alert operator
+- ✅ Proper emergency response and shutdown
+- ✅ Effective containment of spill
+- ✅ No injuries
+
+### What Went Wrong
+- ❌ Operating above equipment design specifications
+- ❌ Inadequate management of change process
+- ❌ No engineering review before capacity increase
+- ❌ Insufficient temperature monitoring
+- ❌ Did not learn from previous two failures
+
+### Key Takeaways
+1. **Respect Equipment Design Limits**: Operating above specs reduces reliability
+2. **Management of Change**: Engineering review required before operating condition changes
+3. **Pattern Recognition**: Three failures in 4 months is a clear pattern requiring systematic review
+4. **Proactive vs. Reactive**: Temperature monitoring could have predicted this failure
+5. **Total Cost of Ownership**: Saving capital cost by not upgrading = much higher failure costs
+
+---
+
+## Approvals
+
+**Prepared By**:
+- Name: Sarah Chen, Reliability Engineer
+- Date: June 26, 2026
+- Signature: ________________________
+
+**Reviewed By**:
+- Name: Mike Johnson, Maintenance Supervisor
+- Date: June 26, 2026
+- Signature: ________________________
+
+**Approved By**:
+- Name: Robert Davis, Plant Manager
+- Date: June 27, 2026
+- Signature: ________________________
+
+---
+
+## Attachments
+1. Photos of failed seal (4 images)
+2. Trend data (flow, temperature, vibration) - 30 days
+3. Seal inspection report
+4. Environmental spill report
+5. Operator statement (John Martinez)
+6. Cost estimate for repairs and upgrades
+
+---
+
+**Report Status**: CLOSED - Corrective actions approved and scheduled
+
+**Follow-Up**: Review progress in 30 days (July 25, 2026)
+
+**Distribution**: Plant Manager, Maintenance, Operations, Engineering, Safety, Environmental
+
+---
+
+**END OF REPORT**

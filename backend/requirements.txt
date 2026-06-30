@@ -1,0 +1,87 @@
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# LLM & Embeddings
+openai==1.10.0
+langchain==0.1.5
+langchain-community==0.0.16
+langchain-openai==0.0.5
+sentence-transformers==2.3.1
+transformers==4.37.0
+
+# Vector Store & Search
+faiss-cpu==1.14.3
+rank-bm25==0.2.2
+
+# Knowledge Graph
+neo4j==5.16.0
+
+# Database & Cache
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+alembic==1.13.1
+redis==5.0.1
+
+# Object Storage
+minio==7.2.3
+
+# Document Processing
+unstructured==0.12.0
+PyMuPDF==1.23.21
+pdfplumber==0.10.3
+python-docx==1.1.0
+openpyxl==3.1.2
+python-magic-bin==0.4.14  # Windows support
+
+# OCR
+paddleocr==2.7.0.3
+pytesseract==0.3.10
+paddlepaddle==2.6.0
+
+# Computer Vision
+opencv-python==4.9.0.80
+ultralytics==8.1.11  # YOLOv8
+
+# NLP
+spacy==3.7.2
+# Run: python -m spacy download en_core_web_sm
+
+# Email Processing
+email-parser==0.2.0
+python-magic==0.4.27
+
+# RAG Evaluation
+ragas==0.1.4
+datasets==2.16.1
+
+# Utilities
+python-multipart==0.0.6
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.1
+httpx==0.26.0
+tenacity==8.2.3
+tiktoken==0.5.2
+
+# Task Queue
+celery==5.3.6
+flower==2.0.1
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+httpx==0.26.0
+
+# Development
+black==24.1.1
+flake8==7.0.0
+mypy==1.8.0
+pre-commit==3.6.0

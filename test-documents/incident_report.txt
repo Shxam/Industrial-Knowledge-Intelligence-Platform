@@ -1,0 +1,263 @@
+INCIDENT REPORT
+Equipment Failure Analysis
+
+Report ID: IR-2026-06-15-001
+Date of Incident: June 15, 2026
+Location: Production Line 3 - Conveyor System
+Reported By: John Martinez, Shift Supervisor
+Investigation Team: Maintenance Department, Safety Department
+
+====================================
+INCIDENT SUMMARY
+====================================
+
+At 2:47 PM on June 15, 2026, the main conveyor belt on Production Line 3 experienced an unexpected shutdown due to motor overheating. The incident resulted in 4.5 hours of unplanned downtime and approximately $12,500 in lost production.
+
+No injuries were reported. The incident was classified as a Level 2 equipment failure according to company safety protocols.
+
+====================================
+EQUIPMENT DETAILS
+====================================
+
+Equipment: Conveyor Belt Motor (Motor ID: CB3-M-001)
+Manufacturer: Siemens
+Model: 1LA8 315-4P
+Rating: 150 HP, 1780 RPM
+Installation Date: March 2019
+Last Major Maintenance: December 2025
+
+Operating Parameters:
+- Normal operating temperature: 45-55°C
+- Maximum allowable temperature: 80°C
+- Actual temperature at failure: 95°C (estimated)
+- Normal current draw: 85-95 amps
+- Current at failure: 110 amps (trip setting)
+
+====================================
+SEQUENCE OF EVENTS
+====================================
+
+2:30 PM - Operator noticed unusual noise coming from conveyor drive
+2:35 PM - Maintenance technician (Mike Thompson) dispatched to investigate
+2:40 PM - Technician reported motor running hot (75°C by infrared thermometer)
+2:42 PM - Decision made to continue monitoring while preparing for shutdown
+2:45 PM - Motor temperature alarm activated in control room
+2:47 PM - Motor tripped on overtemperature, conveyor stopped automatically
+2:50 PM - Production supervisor notified of unplanned downtime
+3:00 PM - Maintenance team began troubleshooting
+6:30 PM - Motor replaced with spare, production resumed
+7:15 PM - Full production rate achieved
+
+Total Downtime: 4 hours 28 minutes
+
+====================================
+ROOT CAUSE ANALYSIS
+====================================
+
+5-Why Analysis:
+
+Why did the motor overheat?
+→ The cooling fan was not providing adequate airflow.
+
+Why was the cooling fan not providing adequate airflow?
+→ The fan blades and motor cooling fins were heavily clogged with dust and debris.
+
+Why were the fan and cooling fins clogged?
+→ The area around the motor had accumulated significant dust due to inadequate housekeeping and the ventilation system was not functioning properly.
+
+Why was there inadequate housekeeping and ventilation?
+→ The maintenance schedule did not include regular cleaning of the motor and surrounding area, and the ventilation system had not been inspected in 8 months.
+
+Why was the maintenance schedule incomplete and ventilation system uninspected?
+→ There was no assigned responsibility for motor area cleaning, and the preventive maintenance program did not include ventilation system checks for auxiliary equipment.
+
+====================================
+CONTRIBUTING FACTORS
+====================================
+
+People:
+- Lack of awareness about motor cooling requirements
+- No specific assignment of cleaning responsibilities
+- Maintenance technicians focused on primary equipment
+
+Process:
+- Incomplete preventive maintenance schedule
+- No inspection checklist for motor area cleanliness
+- Ventilation system maintenance not included in PM program
+- Delay in responding to initial noise report
+
+Equipment:
+- Motor located in dusty environment
+- Ventilation system failed (blocked intake)
+- No temperature monitoring until alarm activated
+- Cooling fan design susceptible to clogging
+
+Environment:
+- High dust generation from nearby processes
+- Poor ventilation in motor area
+- Ambient temperature 32°C (summer conditions)
+- No local exhaust ventilation
+
+Management:
+- PM schedule did not include motor cleaning
+- Resource allocation prioritized production equipment
+- No escalation procedure for unusual noises
+- Training gaps on motor thermal management
+
+Materials:
+- Dust accumulation from process operations
+- Inadequate air filtration
+- No protective covers on motor intake
+
+====================================
+IMMEDIATE CORRECTIVE ACTIONS
+====================================
+
+1. Replaced failed motor with spare unit
+2. Cleaned cooling fan and fins on all similar motors
+3. Cleared ventilation system blockage
+4. Added temporary local exhaust fan
+5. Implemented daily motor temperature checks
+6. Updated operator rounds checklist to include visual inspection
+
+Status: All immediate actions completed by June 16, 2026
+
+====================================
+LONG-TERM CORRECTIVE ACTIONS
+====================================
+
+1. Update PM Schedule (Due: June 30, 2026)
+   - Add weekly motor area cleaning task
+   - Include monthly ventilation system inspection
+   - Add quarterly infrared scanning of all motors
+   Responsibility: Maintenance Supervisor
+
+2. Engineering Improvements (Due: August 31, 2026)
+   - Install motor intake filters on all critical motors
+   - Upgrade local ventilation system
+   - Add continuous temperature monitoring with trending
+   - Install dust suppression system in conveyor area
+   Responsibility: Engineering Manager
+
+3. Training Program (Due: July 31, 2026)
+   - Develop motor thermal management training module
+   - Train all maintenance technicians on cooling system maintenance
+   - Include in new employee orientation
+   Responsibility: Training Coordinator
+
+4. Documentation Updates (Due: July 15, 2026)
+   - Update equipment maintenance procedures
+   - Revise operator inspection checklists
+   - Create motor cleaning procedure document
+   - Update critical spare parts list
+   Responsibility: Maintenance Manager
+
+5. Monitoring and Alerting (Due: July 31, 2026)
+   - Install permanent temperature sensors with 4-20mA output
+   - Configure trending and alarm in DCS
+   - Set early warning at 65°C (not just trip at 80°C)
+   - Create mobile alerts for operators
+   Responsibility: Instrumentation Supervisor
+
+====================================
+FINANCIAL IMPACT
+====================================
+
+Direct Costs:
+- Motor replacement: $8,500
+- Labor (troubleshooting + replacement): $1,200
+- Consumables: $150
+- Total Direct Costs: $9,850
+
+Indirect Costs:
+- Lost production (4.5 hours): $12,500
+- Expedited shipping for motor: $450
+- Overtime for maintenance crew: $800
+- Total Indirect Costs: $13,750
+
+Total Incident Cost: $23,600
+
+Prevention Investment:
+- Motor intake filters (15 units): $3,000
+- Temperature sensors and installation: $5,500
+- Ventilation upgrades: $8,000
+- Training program development: $2,500
+- Total Prevention Investment: $19,000
+
+ROI: Prevention investment pays back in less than one avoided incident
+
+====================================
+LESSONS LEARNED
+====================================
+
+1. PM schedules must include auxiliary equipment, not just primary production equipment
+
+2. Temperature monitoring should include early warning alerts, not just trip setpoints
+
+3. Environmental conditions (dust, temperature) must be considered in maintenance planning
+
+4. Operator observations (unusual noises) should trigger immediate investigation, not continued monitoring
+
+5. Cooling systems are critical to motor reliability and require regular inspection
+
+6. Ventilation systems supporting production equipment require preventive maintenance
+
+7. Clear responsibility assignments are needed for housekeeping in all plant areas
+
+8. Spare parts availability prevented extended downtime - critical spares policy validated
+
+====================================
+COMMUNICATION
+====================================
+
+Incident communicated to:
+- Plant Manager (June 15, 6:00 PM)
+- Safety Committee (June 16, morning meeting)
+- All maintenance personnel (June 16, toolbox talk)
+- Operations supervisors (June 16, shift handover)
+
+Lessons learned to be shared at:
+- Monthly safety meeting (July)
+- Maintenance team meeting (June 23)
+- Plant-wide newsletter (July edition)
+
+====================================
+APPROVALS
+====================================
+
+Report Prepared By: John Martinez, Shift Supervisor
+Date: June 16, 2026
+
+Investigation Team Leader: Sarah Chen, Maintenance Engineer
+Date: June 16, 2026
+
+Reviewed By: Robert Williams, Maintenance Manager
+Date: June 17, 2026
+
+Approved By: James Anderson, Plant Manager
+Date: June 17, 2026
+
+====================================
+ATTACHMENTS
+====================================
+
+1. Motor temperature log (June 15, 2026)
+2. Infrared thermal images (pre-replacement)
+3. Photographs of dust accumulation
+4. Maintenance work order
+5. Spare parts usage record
+6. Production loss calculation
+
+====================================
+END OF REPORT
+====================================
+
+Distribution:
+- Maintenance Department
+- Operations Department
+- Safety Department
+- Engineering Department
+- Plant Manager
+- Document Control
+
+Retention: 7 years (per company policy)
